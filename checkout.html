@@ -14,7 +14,7 @@
     <header class="container sticky">
         <nav class="row navbar navbar-expand-lg bg-white navbar-light ">
                 <div class="logo-abiCollection " style="margin: 0 auto;">
-                    <a href="/" class="navbar-brand">
+                    <a href="index.html" class="navbar-brand">
                     <span class="abi-logo-color">Abi</span>Collection</a>
                 </div>
         </nav>
@@ -22,19 +22,77 @@
     </header>
 
     <section class="container text-center" >
-        <h2 class="mt-5" style="color:rgb(253, 163, 178);">Ayo bayar Transaksimu 
+        <h2 class="mt-5" style="color:rgb(253, 163, 178); ">Ayo bayar Transaksimu 
             <br> Sekarang!</h2>
+           <div class="center-checkout">
             <div class="row">
-                <div class="col-md-4">
-                    bank
+                <div class="col-md-6 box-bank mt-5">
+                    <h5>
+                        Pilih Bank Transfer
+                    </h5>
+                    <div class="col-md-5 mt-5 item-bank-wrapper">
+                       <div class="item-bank">
+                        <img src="src/icon/bca.png" alt="" class="img-bank">
+                            <div class="title-bank">
+                                <h5>
+                                    Bank Central Asia
+                                </h5>
+                                <p style="font-weight:300; font-size:20px; text-align: right;">
+                                    99912345678
+                                </p>
+                            </div>
+                       </div>
+                       <div class="item-bank">
+                        <img src="src/icon/mandiri.png" alt="" class="img-bank">
+                            <div class="title-bank">
+                                <h5>
+                                    Mandiri
+                                </h5>
+                                <p style="font-weight:300; font-size:20px; text-align: right;">
+                                    551234567890113
+                                </p>
+                            </div>
+                       </div>
+                    </div>
+                    
                 </div>
-                <div class="col-md-1">
-                    devider
-                </div>
-                <div class="col-md-6">
-                    kirim bukti
+                
+                <div class="col-md-6 konfirmasi mt-5">
+                    <h5>
+                        kirim Bukti
+                    </h5>
+                    <div class="detail-konfirmasi ml-5" >
+                        <table class="table table-borderless" >
+                            <tbody>
+                                <tr>
+                                    <th style="text-align: left;">
+                                        Nama
+                                    </th>
+                                    <td>
+                                        Takiya Sobri
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th style="text-align: left;">Id Transaksi Pembelian</th>
+                                    <td>
+                                         <span>
+                                            172983686
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <form action="success.html" class="mt-5">
+                            <div class="custome-input mb-5">
+                                <input type="file" class="input-file" name="ingpuGambar">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary-pink">konfirmasi</button>
+                        </form>
+                    </div>
                 </div>
             </div>
+           </div>
     </section>
 
 

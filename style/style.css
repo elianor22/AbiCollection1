@@ -121,6 +121,23 @@ hr {
   color: #fff;
 }
 
+.btn-buy-now {
+  background-color: #FD5656;
+  border-radius: 0;
+  width: 237px;
+  height: 47px;
+  font-family: "Roboto";
+  font-weight: 500;
+  color: #fff;
+  font-size: 20px;
+}
+
+.btn-buy-now:hover {
+  background-color: #f77373;
+  text-decoration: none;
+  color: #fff;
+}
+
 .btn-secondary-pink {
   background-color: #fde4e4;
   width: 70px;
@@ -135,6 +152,25 @@ hr {
   background-color: #f8cdcd;
   -webkit-transition: all .75s;
   transition: all .75s;
+}
+
+.btn-cart {
+  background-image: url(../src/icon/icon-love.svg);
+  background-repeat: no-repeat;
+  background-size: 27px 27px;
+  fill: darkblue;
+  height: 40px;
+  width: 30px;
+  border: 0;
+  margin-left: 2px;
+  margin-top: 1rem;
+  vertical-align: middle;
+}
+
+.btn-cart:hover {
+  background-image: url(../src/icon/icon-love-solid.svg);
+  background-repeat: no-repeat;
+  background-size: 27px 27px;
 }
 
 .best-produk {
@@ -160,6 +196,7 @@ hr {
 }
 
 .best-produk-items .image-best-produk {
+  border-radius: 60px 0;
   width: 541px;
   height: 512px;
 }
@@ -375,112 +412,299 @@ hr {
   color: #fda3b2;
 }
 
-.gallery .xzoom-container {
+.box-details {
+  border-radius: 4px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.box-details .image-wrapper-details {
+  position: relative;
+}
+
+.box-details .image-wrapper-details .img-list {
+  float: left;
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  margin-top: -10px;
+}
+
+.box-details .image-wrapper-details .img-list .small-img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 5px;
+}
+
+.box-details .image-wrapper-details .big-img {
+  float: left;
+  width: 500px;
+  height: 500px;
+}
+
+.box-details .item-title {
+  font-family: "Roboto";
+  font-size: 1rem;
+}
+
+.box-details .item-deskripsi {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.box-details .btn {
+  border: none;
+}
+
+.box-details .btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.box-details .btn-primary-pink {
+  margin-left: 30%;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  width: 150px;
+  height: 40px;
+}
+
+.radio-buttons {
+  width: 100%;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.radio-buttons input {
+  display: none;
+}
+
+.radio-buttons input[type="radio"] {
+  display: none;
+}
+
+.radio-buttons label {
+  margin-right: 10px;
+  color: #fda3b2;
+  font-size: 20px;
+  border: 2px solid #fda3b2;
+  border-radius: 50%;
+  padding: 4px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.radio-buttons [type="radio"]:checked + label {
+  background-color: #fda3b2;
+  color: white;
+}
+
+.detail-pembelian {
+  position: relative;
+  top: 50px;
+}
+
+.detail-pembelian .detail-transaksi {
+  padding: 10px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.detail-pembelian .detail-transaksi-wrapper {
+  margin-top: 20px;
+  margin: 0 auto;
+}
+
+.detail-pembelian .table-details {
+  display: inline-block;
+  width: 500px;
+}
+
+.detail-pembelian tbody th {
+  float: left;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.detail-pembelian tbody td {
+  position: relative;
+  font-weight: 300;
   display: block;
+  width: 100%;
+  text-align: right;
+  font-size: 17px;
 }
 
-.gallery .xzoom-container .xzoom {
-  width: 512px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  margin-bottom: 10px;
+.detail-pembelian tbody td label {
+  margin-right: 10px;
+  background-color: #fda3b2;
+  color: white;
+  font-size: 20px;
+  border-radius: 50%;
+  padding: 4px;
+  display: inline-block;
+  text-align: center;
+  width: 40px;
+  height: 40px;
 }
 
-.gallery .xzoom-container .xactive {
-  border: 4px solid #1ABC9C;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+.detail-pembelian tbody .table-alamat {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  width: 410px;
+  height: 90px;
+  text-align: right;
+  font-weight: 300;
 }
 
 @media only screen and (max-width: 991px) {
-  .best-produk {
+  .detail-pembelian .best-produk {
     font-size: 28px;
     margin-bottom: 0;
   }
-  .best-produk-items .title-best-produk {
+  .detail-pembelian .best-produk-items .title-best-produk {
     font-size: 24px;
   }
-  .best-produk-items .deskripsi-sub-produk {
+  .detail-pembelian .best-produk-items .deskripsi-sub-produk {
     font-size: 20px;
   }
-  .best-produk-items .btn-primary-pink {
+  .detail-pembelian .best-produk-items .btn-primary-pink {
     margin-top: 50px !important;
   }
-  .best-produk-items .image-best-produk {
+  .detail-pembelian .best-produk-items .image-best-produk {
+    border-radius: 30px 0;
     width: 335px;
     height: 332px;
   }
-  .best-produk-items .image-best-produk-frame {
+  .detail-pembelian .best-produk-items .image-best-produk-frame {
     width: 335px;
     height: 332px;
   }
-  .produk-main-content .produk-list {
+  .detail-pembelian .produk-main-content .produk-list {
     width: 100%;
   }
-  .footer-list {
+  .detail-pembelian .footer-list {
     margin-left: 5px !important;
+  }
+  .detail-pembelian .img-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .detail-pembelian .img-list li {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .detail-pembelian .big-img {
+    position: relative;
+    left: -72px;
+    top: 100px;
+    margin-right: 50px;
+    width: 420px !important;
+    height: 420px !important;
+  }
+  .detail-pembelian .box-title {
+    padding: 0;
+    margin-top: 100px;
+    margin-left: 10px;
+  }
+  .detail-pembelian .radio-buttons {
+    text-align: left;
+  }
+  .detail-pembelian .btn-primary-pink {
+    position: relative;
+    left: -30px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .best-produk-items .image-best-produk {
+  .detail-pembelian .best-produk-items .image-best-produk {
+    border-radius: 60px 0;
     width: 341px;
     height: 312px;
   }
-  .best-produk-items .image-best-produk-frame {
+  .detail-pembelian .best-produk-items .image-best-produk-frame {
     width: 341px;
     height: 312px;
   }
-  .produk-main-content {
+  .detail-pembelian .produk-main-content {
     padding: 1rem;
   }
-  .produk-main-content .produk-list {
+  .detail-pembelian .produk-main-content .produk-list {
     width: 100%;
   }
-  .footer-list {
+  .detail-pembelian .footer-list {
     margin: 0 !important;
     margin-bottom: 10px !important;
     padding: 0 !important;
   }
+  .detail-pembelian .img-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .detail-pembelian .img-list li {
+    margin-right: 10px;
+  }
+  .detail-pembelian .big-img {
+    position: relative;
+    top: 0;
+    width: 100% !important;
+    height: 500px;
+  }
+  .detail-pembelian .box-title {
+    margin-top: 20px !important;
+  }
 }
 
 @media only screen and (max-width: 767px) {
-  .best-produk-items .image-best-produk {
+  .detail-pembelian .best-produk-items .image-best-produk {
+    border-radius: 60px 0;
     width: 541px;
     height: 512px;
   }
-  .best-produk-items .image-best-produk-frame {
+  .detail-pembelian .best-produk-items .image-best-produk-frame {
     width: 541px;
     height: 512px;
   }
-  .card {
+  .detail-pembelian .card {
     margin-bottom: 10px;
   }
 }
 
 @media only screen and (max-width: 415px) {
-  .best-produk-items .btn-primary-pink {
+  .detail-pembelian .best-produk-items .btn-primary-pink {
     margin-top: 50px !important;
     margin-left: 40px !important;
   }
-  .card {
+  .detail-pembelian .card {
     margin-bottom: 10px;
   }
 }
 
-[data-scroll] {
+.detail-pembelian [data-scroll] {
   -webkit-transition: -webkit-transform .856s;
   transition: -webkit-transform .856s;
   transition: transform .856s;
   transition: transform .856s, -webkit-transform .856s;
 }
 
-[data-scroll="in"] {
+.detail-pembelian [data-scroll="in"] {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-[data-scroll="out"] {
+.detail-pembelian [data-scroll="out"] {
   -webkit-transform: translateY(8.65rem);
           transform: translateY(8.65rem);
   opacity: 0;

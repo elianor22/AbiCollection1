@@ -130,6 +130,22 @@ hr{
         color: #fff;
     }
 }
+.btn-buy-now{
+    background-color: #FD5656;
+    border-radius: 0;
+    width: 237px;
+    height: 47px;
+    font-family: "Roboto";
+    font-weight: 500;
+    color: #fff;
+    font-size: 20px;
+
+    &:hover{
+        background-color: #f77373;
+        text-decoration: none;
+        color: #fff;
+    }
+}
 .btn-secondary-pink{
     background-color: #fde4e4;
     width: 70px;
@@ -144,7 +160,25 @@ hr{
         transition: all .75s;
     }
 }
-
+.btn-cart{
+    background-image:url(../src/icon/icon-love.svg) ;
+    background-repeat: no-repeat;
+    background-size: 27px 27px ;
+    fill: darkblue;
+    height: 40px;
+    width: 30px;
+    border: 0;
+    margin-left: 2px;
+    margin-top: 1rem;
+    
+    vertical-align: middle;
+    
+    &:hover{
+        background-image:url(../src/icon/icon-love-solid.svg) ;
+        background-repeat: no-repeat;
+        background-size: 27px 27px ;
+    }
+}
 
 .best-produk{
     font-size: 36px;
@@ -169,7 +203,7 @@ hr{
     }
 
         .image-best-produk{
-            
+            border-radius: 60px 0;
             width: 541px;
             height: 512px;
             
@@ -392,21 +426,160 @@ hr{
         }
     }
 }
-.gallery{
-    .xzoom-container{
-        display: block;
+.box-details{
 
-        .xzoom{
-            width: 512px;
-            box-shadow: none;
-            margin-bottom: 10px;
+    border-radius: 4px;
+    padding: 10px;
+    overflow:hidden ;
+
+    .image-wrapper-details{
+        position: relative;
+
+        .img-list{
+            float: left;
+            list-style-type: none;
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+            margin-top: -10px;
+
+            .small-img{
+                width: 100px;
+                height: 100px;
+                margin-bottom:5px ;
+                
+            }
         }
-        .xactive{
-            border: 4px solid #1ABC9C;
+
+        .big-img{
+            float: left;
+            width: 500px;
+            height: 500px;
+        }
+    }
+
+    .item-title{
+        font-family: "Roboto";
+        font-size: 1rem;
+    }
+    .item-deskripsi{
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .btn{
+        border: none;
+        &:focus{
             box-shadow: none;
         }
     }
+    .btn-primary-pink{
+        margin-left: 30%;
+        margin-top: 30px;
+        font-size: 16px;
+        font-weight: 400;
+        width: 150px;
+        height: 40px;
+       
+    }
 }
+
+.radio-buttons{
+    width: 100%;
+    margin: 0 auto;
+    text-align: right;
+
+
+        input{
+            display: none;
+        }
+        
+        input[type="radio"]{
+            display: none;
+        
+        }
+        label{
+            margin-right:10px ;
+            color: $text-color-secondary;
+            font-size: 20px;
+            border: 2px solid $text-color-secondary;
+            border-radius: 50%;
+            padding: 4px;
+            display: inline-block;
+            text-align: center;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            
+        }
+        [type="radio"]:checked + label{
+            background-color: $text-color-secondary;
+            color: white;
+        }
+
+}
+
+.detail-pembelian{
+
+    position: relative;
+    top:50px;
+
+    .detail-transaksi{
+        padding: 10px;
+        margin: 0 auto;
+        overflow: hidden;
+
+    }
+    .detail-transaksi-wrapper{
+
+        margin-top: 20px;
+        margin: 0 auto;
+    }
+    .table-details{
+        display: inline-block;
+        width: 500px;
+    }
+    tbody{
+        th{
+        float: left;
+        font-weight: 400;
+        font-size: 18px;
+        }   
+        td{
+            position: relative;
+            font-weight: 300;
+            display: block;
+            width: 100%;
+            text-align: right;
+            font-size: 17px;
+
+            label{
+                margin-right:10px ;
+                background-color: $text-color-secondary;
+                color: white;
+                font-size: 20px;
+                border-radius: 50%;
+                padding: 4px;
+                display: inline-block;
+                text-align: center;
+                width: 40px;
+                height: 40px;
+                
+            }
+            
+        }
+
+        .table-alamat{
+            background-color: rgba(255, 255, 255, 0);
+            border: none;
+            width: 410px;
+            height: 90px;
+            text-align: right;
+            font-weight: 300;
+        }
+}
+
+
 @media only screen and(max-width: 991px){
     .best-produk{
         font-size: 28px;
@@ -424,6 +597,7 @@ hr{
            margin-top: 50px !important;
         }
         .image-best-produk{
+            border-radius: 30px 0;
             width: 335px;
             height: 332px;
         }
@@ -444,6 +618,36 @@ hr{
     .footer-list{
         margin-left: 5px !important;
     }
+    .img-list{
+    
+        display: flex;
+        flex-wrap: nowrap;
+
+        li{
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+    }
+    .big-img{
+        position: relative;
+        left: -72px;
+        top: 100px;
+        margin-right: 50px;
+        width: 420px !important;
+        height: 420px !important;
+    }
+    .box-title{
+        padding: 0;
+        margin-top: 100px;
+        margin-left: 10px;
+    }
+    .radio-buttons{
+        text-align: left;
+    }
+    .btn-primary-pink{
+        position: relative;
+        left: -30px;
+    }
 
 }
 
@@ -453,6 +657,7 @@ hr{
     .best-produk-items{
 
         .image-best-produk{
+            border-radius: 60px 0;
             width: 341px;
             height: 312px
         }
@@ -476,6 +681,25 @@ hr{
         margin-bottom: 10px !important;
         padding: 0 !important;
     }
+    .img-list{
+
+        display: flex;
+        flex-wrap: nowrap;
+
+        li{
+            margin-right: 10px;
+        }
+    }
+    .big-img{
+        position: relative;
+        top: 0;
+        width: 100% !important;
+        height: 500px;
+    }
+    .box-title{
+        margin-top: 20px !important;
+    }
+    
 }
 @media only screen and( max-width: 767px){
 
@@ -483,6 +707,7 @@ hr{
     .best-produk-items{
 
         .image-best-produk{
+            border-radius: 60px 0;
             width: 541px;
             height: 512px
         }
@@ -528,3 +753,4 @@ hr{
   }
 
 
+}
